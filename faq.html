@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>faq.html</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" type="text/css" href="scripts/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="scripts/slick/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/homepage.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/mediaqueries.css">
+        <script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery-ui-1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="scripts/slick/slick.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("header p").click(function() {
+                    $("#nav").toggleClass("slideDown", 10);
+                });
+
+                $("#hamburger").click(function() {
+                    $(this).toggleClass("change");
+                    $("#nav").toggleClass("slideDownFurther");
+                });
+
+                $(".slick").slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2050,
+                    fade: true,
+                });
+            });
+
+            $(window).scroll(function(){
+                $("header").stop().animate({
+                    top: $(document).scrollTop()}, 'slow');
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("h1+p").hide();
+                $("h1:nth-of-type(1)").click(function(){
+                    $("h1:nth-of-type(1)+p").toggle("drop");
+                });
+                $("h1:nth-of-type(2)").click(function(){
+                    $("h1:nth-of-type(2)+p").toggle("drop");
+                });
+                $("h1:nth-of-type(3)").click(function(){
+                    $("h1:nth-of-type(3)+p").toggle("drop");
+                });
+                $("h1:nth-of-type(4)").click(function(){
+                    $("h1:nth-of-type(4)+p").toggle("drop");
+                });
+            });
+        </script>
+        <style>
+            h1.magenta:hover{
+                cursor: pointer;
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+            <div id="hamburger">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+            </div>
+            <a href="index.html"><img src="images/BRICKSxMORTAR_logo.png" id="logo"/></a>
+        </div>
+        <!--end of banner-->
+
+        <div id="wrapper">
+            <header>
+                <p>menu</p>
+                <nav id="nav">
+                    <a class="menu" href="index.html">OUR MISSION</a>
+                    <a class="menu" href="story.html">OUR STORY</a>
+                    <a class="menu" href="#">OUR SERVICES</a>
+                    <a class="menu" href="#">LOCATIONS</a>
+                </nav>
+            </header>
+            <!--end of header-->
+
+            <div id="mission">
+                <h3 class="FAQaquamarine">F.A.Q.</h3>
+                <h1 class="magenta">Do I need to make an appointment, or can I walk right in?</h1>
+                <p>While our physical locations are open to the public to come in and explore <a class="definition" href="#def1" rel="modal:open">our galleries</a>, we do ask that you call or e-mail ahead of time if you're interested in a design consultation or a fitting. Just send us your name, a number we can reach you with, and a preferred date and time, using the e-mail link at the bottom of the page.</p>
+                <h1 class="magenta">Do I need to have my own fabric and materials picked out ahead of time?</h1>
+                <p>No, that's all part of the fun and the customer experience. One of our talented designers will be happy to walk you through fabric samples, make recommendations, and place orders on your behalf for everything you need to create the perfect custom look.</p>
+                <h1 class="magenta">Do you make men's clothing?</h1>
+                <p>Yes, we make clothing for all expressions of gender, whether that's cis-gendered men and women or a more androgynous look. We want clothing to be comfortable for our clients physically, emotionally and psychologically.</p>
+                <h1 class="magenta">What if I can't pay for everything up front?</h1>
+                <p>We know that custom clothing can be expensive, but it's also an investment in you. That's why we're more than willing to work with you to devise a payment plan for your custom outfit. We offer 2, 4 and 6-month instalment plans as well as free consultations for low-income and precarious workers.</p>
+            </div>
+            <!--end of mission-->
+
+            <footer id="footer">
+                <p class="magenta smaller footer">©BRICKSxMORTAR, inc. 2018-2020 // 1.888.708.9950  //<a href="mailto:info@bricksxmortar.com">info@bricksxmortar.com</a></p>
+            </footer>
+            <!--end of wrapper-->
+        </div>
+
+        <div id="def1" class="modal" style="background-color: black;">
+            <p>
+                <strong style="color: magenta;">What Do We Mean By Galleries?</strong><br/><br/>While we do sell a limited array of items off the rack, the majority of the clothes that we make are custom-to-order. So, we do not have stock to fill the shelves per se, let alone multiples of items in different sizes. Instead, what you'll find when you arrive is a curated collection of our best work displayed on mannequins of many different sizes and shapes.
+            </p>
+        </div>
+        
+</body>
+</html>

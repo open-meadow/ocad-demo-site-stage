@@ -1,0 +1,48 @@
+@media screen and (max-width:640px){
+    .floatRight, .floatLeft{
+        float: none;
+    }
+
+    .slick, #pinkkimono{
+        display: block;
+        width: 95%;
+        min-width: 95%;
+        margin: auto;
+    }
+
+    header p{
+        background: transparent;
+        color: black;
+    }
+
+    header p:hover {
+        color: black;
+    }
+    
+    #bar1, #bar2, #bar3 {
+        width: 20px;
+        height: 5px;
+        margin-top: -1px;
+        margin-bottom: 4px;
+        background-color: aquamarine;
+        transition: 0.5s;
+    }
+
+    #wrapper{
+        display: auto;
+        top: -1em;
+    }
+
+    #audioButton {
+        width: 35px;
+        top: 0.5em;
+        margin-left: 83%;
+    }
+}
+
+@media screen and (min-width:641px){
+    #hamburger{
+        display: none;
+    }
+}
+

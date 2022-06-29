@@ -1,0 +1,14 @@
+.slick{
+    position: relative;
+    top: -1em;
+    width: 50%;
+    height: auto;
+    min-width: 200px;
+    max-width: 500px;
+    margin: 1.5em;
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+}

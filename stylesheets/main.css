@@ -1,0 +1,248 @@
+body{
+    width: 100%;
+    height: auto;
+    background-image: url("../images/BRICKSxMORTAR_wallpaper.jpg");
+    background-size: 200px;
+    background-color: black;
+    color: floralwhite;
+    font-family: 'Courier New', Courier, monospace, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+}
+#wrapper{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: black;
+    padding: 1em;
+    position: relative;
+    top: 6.5em;
+    z-index: 0;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: +1;
+}
+
+header p{
+    width: 99%;
+    height: auto;
+    color: black;
+    background-color: aquamarine;
+    font-weight: bold;
+    padding-left: 1%;
+}
+
+header p:hover{
+    cursor: pointer;
+    color: magenta;
+}
+
+#logo{
+    width: 60%;
+    /*max-width: 60%;*/
+    height: auto;
+    display: block;
+    margin: auto;
+    z-index: -1;
+}
+
+#nav{
+    width: 100%;
+    height: auto;
+    background: aquamarine;
+    margin-top: -99em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 0;
+    text-align: center;
+    /*border-top: 1px solid white; */
+    /*border-bottom: 1px solid white; */
+    transition: margin-top 0.8s ease-in-out;
+}
+
+#nav.slideDown{
+    margin-top: -1em;
+    color: magenta;
+    cursor: pointer;
+}
+
+#nav.slideDownFurther{
+    margin-top: 3em;
+}
+
+a.menu{
+    display: block;
+}
+
+a.menu:link{
+    color:black;
+    text-decoration: none;
+    transition: color 0.8s;
+}
+a.menu:visited{
+    color: purple;
+    text-decoration: underline;
+}
+a.menu:hover{
+    color: magenta;
+    text-decoration: underline;
+}
+a.menu:active{
+    color: magenta;
+    text-decoration: underline;
+}
+.magenta{
+    color:magenta;
+    transition: background-color 0.8s ease-in-out;
+}
+.smaller{
+    font-size: 0.8em;
+}
+
+footer{
+    width: 100%;
+    background-color: floralwhite;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    clear: both;
+    opacity: 70%;
+    transition: opacity 0.8s;
+}
+
+footer:hover{
+    opacity: 100%;
+}
+
+.footer p a{
+    width: 90%;
+    margin: auto;
+}
+
+.footer a:link{
+    color: magenta;
+    background-color: floralwhite;
+    text-decoration: none;
+}
+
+.footer a:visited{
+    color: magenta;
+    background-color: floralwhite;
+    text-decoration: none;
+}
+.footer a:active{
+    color: black;
+    background-color: aquamarine;
+}
+
+.footer a:hover{
+    color:black;
+    background-color: aquamarine;
+}
+
+.FAQaquamarine{
+    color:aquamarine;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h1.magenta{
+    color: magenta;
+    font-size: 24px;
+}
+ 
+.floatLeft{
+    float:left;
+}
+
+.floatRight{
+    float:right;
+}
+
+#banner{
+    width: 100%;
+    height: auto;
+    background: #000;
+    border-bottom: 1px solid #fff;
+    position:fixed;
+    z-index: +1;
+    top:0;
+    left:0;
+    right:0;
+}
+
+@font-face {
+    font-family: "agenda";
+    src: url('../type/agenda_medium.woff2') format('woff2'), url('../type/agenda_medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h3{
+    font-family: agenda;
+    font-size: 1.8em;
+}
+
+a.definition:link{
+    color: floralwhite;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+a.definition:visited{
+    color: floralwhite;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+a.definition:hover{
+    cursor: pointer;
+    color: magenta;
+}
+
+a.definition:active{
+    cursor: pointer;
+    color: magenta;
+}
+
+.modal{
+    color: white;
+}
+
+#hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 1em;
+    left: 5%;
+}
+
+#bar1, #bar2, #bar3 {
+    width: 35px;
+    height: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: aquamarine;
+    transition: 0.5s;
+}
+
+/*rotate first bar */
+.change #bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px,6px);
+    transform: rotate(-45deg) translate(-4px, -5px);
+}
+/*fade second bar */
+.change #bar2{
+    opacity: 0;
+}
+
+/*rotate last bar */
+.change #bar3{    
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-15px, -8px);
+}
